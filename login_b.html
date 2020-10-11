@@ -28,30 +28,14 @@
                 <input type="text" class="input-field" placeholder="Usuario" required>
                 <input type="email" class="input-field" placeholder="Correo" required>
                 <input type="password" class="input-field" placeholder="Contraseña" required>
-                <input type="text" class="input-field" placeholder="Nombre de la Causa" required>
+                <div class="checkBox-DB">
+                    <input type="checkbox" class="check-box" id="donantecheck"><span>Donante</span>
+                    <input type="checkbox" class="check-box" id="beneficiariocheck"><span>Beneficiario</span>
+                </div>
                 <button type="submit" class="submit-btn" id="btnR">Registrar</button>
             </form>
         </div>
     </div>
-    <script>
-        var w = document.getElementById("btnR");
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("elegir");
-
-        function login() {
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0px";
-        }
-
-        function registrar() {
-            w.style.marginTop = "10px";
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            y.style.top = "-225px";
-            z.style.left = "120px";
-        }
-    </script>
+    <script src="js/login.js" type="text/javascript"></script>
 </body>
 </html>
